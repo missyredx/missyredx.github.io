@@ -1,0 +1,594 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
+
+@-ms-viewport {
+  width: device-width ;
+} 
+
+@import "cssreset.css";
+
+a { 
+	text-decoration: none; 
+}
+
+body {
+	font-size: 62.5%;
+	color: #222;
+    background-color: #000;
+}
+
+h1, h2, h3, h4 { 
+	font: bold normal 2.4em/1.0em Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif;
+	color: #336666;
+}
+
+h2 { 
+	font-size: 3.0em;
+	text-shadow: #333 1px 1px 3px;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	z-index: 20;
+}
+
+	h2 span {
+		width: 970px;
+		display: block;
+		padding-left: 20px;
+		margin: 0 auto;
+		overflow: visible;
+	}
+	
+	#workspace div.portpost h2 {
+		color: #336666;
+		position: relative;
+		top: 0; left: 0;
+		width: auto;
+		text-shadow: none;
+		margin-bottom: 10px;
+	}
+
+h3 { 
+	font-size: 1.5em; 
+	color: #333;
+	margin-bottom: 10px;
+}
+
+	h3 span { 
+		font-size: 0.9em;
+		font-style: italic; 
+		color: #999;
+	}
+	
+	div.post h3 {
+		padding-bottom: 0.55em;
+		border-bottom: 1px solid #ddd;
+		margin: 0 0 0.7em;
+		font-size: 1.5em;
+		line-height: 1.4em;
+		color: #666;
+	}
+
+h4 { 
+	margin-top: -0.55em;
+	font-size: 1.7em;
+	line-height: 2.0em;
+	font-style: italic;
+	color: #666;
+	position: relative;
+}
+
+h5 {
+	position: absolute;
+	bottom: 0;
+	height: 15px;
+	width: 100%;
+	font: normal normal 0.9em/1.0em Myriad, Helvetica, Arial, sans-serif;
+	color: #eee;
+	letter-spacing: 0.1em;
+	background: url(images/concretewall-lt.jpg) repeat-x 0 -150px;
+	text-align: right;
+	z-index: 0;
+}
+
+h5 span {
+	padding: 3px 20px 0 0;
+	margin: 0 auto;
+	background: url(images/liteblue.png) repeat-x 0 -150px;
+	height: 12px;
+	width: 970px;
+	display: block;
+}
+
+	#workspace h5 {
+		position: relative;
+	}
+
+p, ul.nav, ul.subnav, label, input, textarea, div.footer ul, a.rss { 
+	font: normal normal 1.2em/1.7em Myriad, Helvetica, Arial, sans-serif; 
+	color: #336666; 
+	padding-bottom: 1.7em;
+}
+
+p.topper {
+	padding-bottom: 0;
+	font-size: 1.0em;
+}
+
+
+a:link {
+    color: #336666
+}
+        
+a:visited { 
+	color: #336666;
+}
+
+a:hover { 
+	border-bottom: 1px dotted #336666;
+}
+
+
+
+ul {
+	list-style: none;
+}
+
+.inner {
+    height: 10px;
+	width: 990px;
+	margin: 0 auto;
+	display: block;
+}
+
+.col {
+    
+	float: left;
+	width: 990px;
+	margin-right: 20px;
+}
+
+.twocol {
+	float: left;
+	width: 464px;
+	margin-right: 20px;
+	display: block;
+}
+	
+	.last {
+		margin-right: 0;
+	}
+
+cite {
+	font-style: normal;
+}
+
+h4 span {
+	text-indent: -10px;
+	display: block;
+}
+
+/* --------------------------------- logonav -------------------------------------------- */
+
+div.logonav {
+	width: 100%;
+	background: url(images/topshad.png) repeat-x;
+	display: block;
+	height: 154px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 9px;
+	z-index: 10;
+}
+
+	div.topbar {
+		background: url(images/liteblue.png) repeat;
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+		div.topbar p {
+			padding: 12px 0 0;
+		}
+	
+		div.topbar h1 {
+			text-transform: uppercase;
+			width: 202px; 
+			letter-spacing: 0.32em;
+			padding: 10px 20px;
+			background: url(images/liteblue.png) repeat-x 0 -150px;
+			margin: 0 20px 0 0;
+			float: left;
+		}
+		
+			div.topbar h1 a:link, div.topbar h1 a:visited {
+				color: #222;
+			}
+			
+			div.topbar h1 a:hover {
+				border-bottom-color: #222;
+			}
+			
+			#workspace div.topbar h1 {
+				letter-spacing: 0.25em;
+			}
+			
+	div.logonav p {
+		font-size: 1.2em;
+        font-style: italic;
+        font-weight: 800;
+		color: #336666;
+	}
+	
+	div.logonav ul {
+		float: right;
+		padding: 10px 0 0;
+		font-size: 1.1em;
+		display: block;
+	}
+	
+		div.logonav ul li {
+			float: left;
+			margin-right: 20px;
+			padding: 2px 0;
+			display: inline;
+			.padding: 0 5px 4px; /* to fix ie7 */
+		}
+			
+			#artiswork #nart {
+				background: url(images/arrow-sm.png) no-repeat;
+				border-bottom: none;
+				padding: 2px 5px;
+				.padding: 0 5px 7px;
+			}
+			
+			#workspace #nwork {
+				background: url(none) no-repeat;
+				border-bottom: none;
+				padding: 2px 5px;
+				.padding: 0 5px 7px;
+			}
+			
+	div.logonav ul.subnav {
+		float: none;
+		display: block;
+		padding: 0 20px;
+		width: 950px;
+	}
+	
+		div.logonav ul.subnav li {
+			padding: 0;
+		}
+	
+		div.logonav ul.subnav li.next {
+			float: right;
+			display: block;
+			margin-right: 0;
+		}
+	
+	#workspace ul.subnav {
+		float: right;
+		width: auto;
+		margin-right: 20px;
+		display: block;
+		padding: 0;
+	}
+	
+		#workspace ul.subnav li.last {
+			margin-right: 0;
+		}
+		
+	ul.subnav li a.current {
+		background: #fff;
+		padding: 2px 5px;
+		margin: -2px -5px;
+		color: #333;
+		border: none;
+	}
+		
+		
+/* --------------------------------- post -------------------------------------------- */	
+
+div.content {
+	position: relative;
+	top: 0; left: 0;
+	width: 100%;
+	background: url(images/concretewall.jpg) repeat-x #222;
+	overflow: visible;
+}
+
+div.coninner {
+	position: relative;
+	background: url(images/cooncretewall-lt.jpg) repeat-x #444;
+	height: 250px;
+	width: 990px;
+	margin: 0 auto;
+}
+
+	#workspace div.coninner {
+		background: url(images/blogimages/blueback.png) no-repeat;
+		height: 550px;
+	}
+	
+div.post {
+	position: relative;
+	width: 100%;
+	background: #ccc;
+	display: block;
+	z-index: 20;
+}
+	
+	div.post a:link, div.post a:visited, div.coninner p a:link, div.coninner p a:visited, div.comment a:link, div.comment a:visited {
+		color: #CCFFFF;
+	}
+	
+	div.post a:hover, div.coninner p a:hover, div.comment a:hover {
+		border-bottom-color: #CCFFFF;
+	}
+	
+	div.post strong {
+		color: #666;
+	}
+	
+div.post div.inner {
+	padding: 30px 20px;
+	min-height: 100px;
+	_min-height: 100px;
+	overflow: visible;
+	width: 950px;
+	background-color: #fff;
+}
+	
+#workspace div.post div.inner {
+	background: none;
+}
+	
+	div.portpost {
+		padding: 20px;
+		_padding-bottom: 0;
+		width: 424px;
+		background: url(images/navbarbg2.png) repeat;
+		position: relative;
+		margin: 0 20px 20px 0;
+		float: left;
+	}
+		
+	div.portpost p.portcats {
+		font-size: 1.0em;
+		color: #333;
+		padding: 0 20px;
+		position: relative;
+		left: -20px;
+		margin-bottom: 20px;
+	}
+		
+		div.portpost p.portcats a:link, div.portpost p.portcats a:visited {
+			color: #666;
+		}
+		
+		div.portpost p.portcats a:hover {
+			border-bottom-color: #666;
+		}
+	
+		div.coninner div.portpost {
+			position: relative;
+			top: 100px;
+			margin: 0 auto;
+			_top: 0;
+			_margin-top: 150px;
+			float: none;
+			width: 706px;
+		}
+		
+	div.post div.even { 
+		margin-right: 0;
+	}	
+		
+	div.portpost h2 {
+		font-size: 2.0em;
+	}
+	
+		div.coninner div.portpost h2 {
+			font-size: 2.5em;
+		}
+	
+	div.portpost h4 {
+		padding: 4px 10px 2px 22px;
+		left: -22px;
+		background: #666;
+		width: 60px;
+		font: normal normal 1.0em Myriad, Helvetica, Arial, sans-serif;
+		margin: 0;
+	}
+	
+		div.portpost h4 a:link, div.portpost h4 a:visited {
+			color: #fff;
+		}
+		
+		div.portpost h4 a:hover {
+			border-bottom-color: #fff;
+		}
+	
+	div.portpost img { 
+		float: right;
+		border: 10px solid #fff;
+		margin: 0 0 20px 20px;
+	}
+	
+		div.portpost a:hover img {
+			border-color: #CCFFFF;
+		}
+	
+	div.portpost img.secimg { 
+		display: none;
+	}
+
+		div.coninner div.portpost img.secimg { 
+			display: block;
+		}
+
+/* --------------------------------- comments -------------------------------------------- */
+
+div.comments {
+	width: 100%;
+	background-color: #ccc;
+}
+
+	div.comments div.inner {
+		padding: 20px 20px 40px 20px;
+		width: 950px;
+		background-color: #fff;
+		border-top: 5px solid #ccc;
+	}
+	
+	div.comments h3 {
+		font-size: 1.8em;
+		margin-bottom: 10px;
+	}
+
+	div.commentbox {
+		width: 446px;
+		float: right;
+		margin-right: 20px;
+		_margin-right: 0; /* to fix ie6 */
+	}
+		
+		div.commentbox form {
+			background: #ccc;
+			padding: 10px;
+			width: 446px;
+		}
+		
+			div.commentbox input, div.commentbox textarea {
+				width: 203px;
+				margin-bottom: 10px;
+				padding: 4px;
+				border: 1px solid #999;
+				font-size: 1.0em;
+				color: #666;
+			}
+			
+			div.commentbox li.commentbig textarea {
+				width: 436px;
+			}
+			
+			div.commentbox textarea {
+				height: 120px;
+				.height: 129px; /* to fix ie */
+				margin-top: 0;
+			}
+			
+			div.commentbox label {
+				margin-bottom: 5px;
+			}
+			
+			div.commentbox li.commenttext {
+				float: right;
+			}
+		
+			div.commentbox #button {
+				background: #CCFFFF;
+				border: none;
+				color: #fff;
+				font-size: 1.2em;
+				width: 99px;
+				margin-top: 10px;
+				cursor: hand; cursor: pointer;
+			}
+			
+			div.commentbox #button:hover {
+				background: #CCFFFF;
+			}
+	
+	div.comment {
+		display:block;
+		width: 462px;
+		padding-top: 13px;
+		margin-bottom: 20px;
+		border-top: 1px solid #ddd;
+	}
+	
+		div.comment h3 {
+			font-size: 1.4em;
+		}
+	
+		div.comment h3 a:link, div.comment h3 a:visited {
+			color: #CCFFFF;
+		}
+		
+		div.comment h3 a:hover {
+			border-bottom-color: #666;
+		}
+	
+/* --------------------------------- footer -------------------------------------------- */
+
+div.footer {
+	width: 100%;
+	background: url(images/concretewall.jpg) repeat-x #666;
+}
+
+	div.footer div.inner {
+		padding: 20px 20px 80px 20px;
+		width: 950px;
+		background: url(images/midblue.png) repeat-x #666;
+	}
+	
+	div.footer h3 {
+		margin-bottom: 15px;
+	}
+	
+	div.footer li {
+		font-size: 0.9em;
+		line-height: 1.2em;
+		margin-bottom: 10px;
+	}
+	
+	div.footer input {
+		padding: 4px;
+		width: 184px;
+		line-height: 1.0em;
+		color: #666;
+	}
+	
+	div.footer p {
+		font-size: 1.0em;
+		padding-bottom: 15px;
+	}
+	
+	div.footer .twocol {
+		padding-top: 10px;
+	}
+	
+	div.footer div.footbox {
+		background: url(images/navbarbg.png) repeat;
+		padding: 10px;
+		width: 202px;
+	}
+	
+		div.footbox ul {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	
+	div.marg {
+		margin-top: 5px;
+	}
+		
+	div.copyrightinfo {
+		width: 100%;
+		clear: both;
+		display: block;
+		padding-top: 30px;
+		top: 20px;
+	}
+	
+		div.copyrightinfo p {
+			border-top: 1px solid #CCFFFF;
+			color: #CCFFFF;
+			padding-top: 10px;
+            text-align: center
+		}
